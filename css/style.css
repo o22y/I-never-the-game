@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap&subset=cyrillic');
+
 .container {
   margin: 0 auto;
 }
@@ -14,4 +16,77 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+}
+.logo-container {
+  display: flex;
+
+  margin-top: 20px;
+}
+.page-main {
+  position: relative;
+}
+.page-main::before {
+  content: "";
+
+  position: absolute;
+
+  top: -50px;
+  left: 190px;
+
+  width: 971px;
+  height: 25px;
+
+  background-image: url(../img/separate-line.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.page-main__description-container {
+  padding: 0 90px;
+  margin-bottom: 50px;
+}
+.page-main__description {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Amatic SC', cursive;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questions__form {
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: normal;
+}
+.questions__container {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 50px;
+}
+.questions__field-container {
+  margin-bottom: 10px;
+}
+
+.questions__button {
+  background-color: transparent;
+  border: 2px dashed black;
+
+  padding: 5px 0;
 }

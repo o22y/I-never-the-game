@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>I never. Добавить вопрос</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -16,16 +16,31 @@
     </div>
   </header>
       <main class="page-main">
-        <h1 class="visually-hidden">Главная страница игры "Я никогда не"</h1>
+        <h1 class="visually-hidden">Cтраница добавление вопросов игры "Я никогда не"</h1>
+        <div class="page-main__description-container">
+        <p class="page-main__description">Привет! <br> Это страница игры "Я никогда не". Мы не особенные, просто устали от дурацких вопросов уровня "Какой твой любимый цвет" в других играх и решили сделать свою. <br>
+          Если у тебя есть классные идеи для вопросов - скорее присылай его нам с помощью формы ниже!</p>
+        </div>
         <section class="page-main__section questions">
           <form class="questions__form" action="#" method="get">
+      <div class="questions__container">
+        <label class="questions__label">Выбери категорию вопроса:
        <select class="questions__type" name="question-type">
          <option>Общий</option>
          <option>Личный</option>
          <option>Сексуальный (18+)</option>
        </select>
-       <textarea class="questions__field" type="textarea" name="question-field" rows="10" placeholder="Введите свой вопрос сюда"></textarea>
+     </label>
+   </div>
+   <div class="questions__container questions__field-container">
+     <label class="questions__label" for="questions__field">Напиши свой "Я никогда не" вопрос:</label>
+        </div>
+   <div class="questions__container">
+       <textarea class="questions__field" id="questions__field" type="text" name="question-field" rows="10" cols="70" wrap="soft" placeholder="Введите свой вопрос сюда"></textarea>
+    </div>
+   <div class="questions__container">
        <button class="button questions__button" type="submit">Отправить вопрос</button>
+     </div>
       </form>
     </section>
   </main>
